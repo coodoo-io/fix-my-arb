@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/floodoo/fix-my-arb.git"
+    "url": "https://github.com/coodoo-io/fix-my-arb.git"
   },
   "bugs": {
-    "url": "https://github.com/floodoo/fix-my-arb/issues"
+    "url": "https://github.com/coodoo-io/fix-my-arb/issues"
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
