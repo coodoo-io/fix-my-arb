@@ -3,7 +3,7 @@
   "displayName": "Fix my ARB",
   "description": "Automatically corrects syntax errors in ARB files",
   "version": "1.0.0",
-  "publisher" : "Florian Schmitz",
+  "publisher": "Florian Schmitz",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -11,15 +11,12 @@
     "Formatters"
   ],
   "icon": "images/icon.png",
-  "keywords" : [
+  "keywords": [
     "arb",
     "flutter",
     "dart",
     "i18n",
     "translation"
-  ],
-  "activationEvents": [
-    "onLanguage:arb"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -27,6 +24,14 @@
       {
         "command": "extension.fixMyArb",
         "title": "Fix my ARB"
+      }
+    ],
+    "languages": [
+      {
+        "id": "json",
+        "extensions": [
+          ".arb"
+        ]
       }
     ]
   },
