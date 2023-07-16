@@ -10,7 +10,7 @@
 - **Formatting**: Automatically formats your ARB files to ensure they are clean and well-structured.
 - **Fix My ARB Command**: Automatically fixes common syntax errors in your ARB files.
 
-![Fix My ARB in Action](assets/demo/fix-my-arb-demo.gif)
+<img src="assets/demo/fix-my-arb-demo.gif" width="50%"/>
 
 ## How to Use
 

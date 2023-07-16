@@ -2,7 +2,7 @@
 	"name": "fixmyarb",
 	"displayName": "Fix my ARB",
 	"description": "Automatically corrects syntax errors in ARB files",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"publisher": "coodooGmbH",
 	"engines": {
 		"vscode": "^1.80.0"
