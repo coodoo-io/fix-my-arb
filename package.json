@@ -1,69 +1,80 @@
 {
-  "name": "fixmyarb",
-  "displayName": "Fix my ARB",
-  "description": "Automatically corrects syntax errors in ARB files",
-  "version": "1.0.0",
-  "publisher": "coodooGmbH",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "categories": [
-    "Formatters"
-  ],
-  "icon": "images/icon.png",
-  "keywords": [
-    "arb",
-    "flutter",
-    "dart",
-    "i18n",
-    "translation"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.fixMyArb",
-        "title": "Fix my ARB"
-      }
-    ],
-    "languages": [
-      {
-        "id": "json",
-        "extensions": [
-          ".arb"
-        ]
-      }
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/coodoo-io/fix-my-arb.git"
-  },
-  "bugs": {
-    "url": "https://github.com/coodoo-io/fix-my-arb/issues"
-  },
-  "activationEvents": [
-    "onCommand:extension.fixMyArb"
-  ],
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.80.0",
-    "@types/glob": "^8.1.0",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "20.2.5",
-    "@typescript-eslint/eslint-plugin": "^5.59.8",
-    "@typescript-eslint/parser": "^5.59.8",
-    "eslint": "^8.41.0",
-    "glob": "^8.1.0",
-    "mocha": "^10.2.0",
-    "typescript": "^5.1.3",
-    "@vscode/test-electron": "^2.3.2"
-  }
+	"name": "fixmyarb",
+	"displayName": "Fix my ARB",
+	"description": "Automatically corrects syntax errors in ARB files",
+	"version": "1.0.1",
+	"publisher": "coodooGmbH",
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"categories": [
+		"Formatters"
+	],
+	"icon": "assets/icon/icon.png",
+	"keywords": [
+		"arb",
+		"flutter",
+		"dart",
+		"i18n",
+		"translation"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.fixMyArb",
+				"title": "Fix my ARB"
+			}
+		],
+		"languages": [
+			{
+				"id": "json",
+				"extensions": [
+					".arb"
+				]
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/coodoo-io/fix-my-arb.git"
+	},
+	"bugs": {
+		"url": "https://github.com/coodoo-io/fix-my-arb/issues"
+	},
+	"activationEvents": [
+		"onCommand:extension.fixMyArb"
+	],
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.80.0",
+		"@types/glob": "^8.1.0",
+		"@types/mocha": "^10.0.1",
+		"@types/node": "20.2.5",
+		"@typescript-eslint/eslint-plugin": "^5.59.8",
+		"@typescript-eslint/parser": "^5.59.8",
+		"eslint": "^8.41.0",
+		"glob": "^8.1.0",
+		"mocha": "^10.2.0",
+		"typescript": "^5.1.3",
+		"@vscode/test-electron": "^2.3.2"
+	},
+	"__metadata": {
+		"id": "d9527cf8-8991-4d39-8d4f-b969ef1d432e",
+		"publisherId": "1609bc97-7f30-4aa2-b4c0-8193babbe013",
+		"publisherDisplayName": "coodoo GmbH",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1689343145286,
+		"preRelease": false
+	}
 }
