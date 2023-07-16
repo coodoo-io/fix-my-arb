@@ -1,6 +1,6 @@
 # Fix My ARB - VS Code Extension
 
-![Version](https://img.shields.io/badge/version-1.0.1-blue)
+![Version](https://img.shields.io/badge/version-1.0.2-blue)
 
 **Fix My ARB** is a Visual Studio Code extension designed to streamline your workflow when working with ARB (Application Resource Bundle) files. It provides syntax highlighting, formatting, and a command called `fix-my-arb` that automatically corrects common syntax errors such as missing commas and quotation marks.
 
