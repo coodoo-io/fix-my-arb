@@ -64,7 +64,17 @@ function fixErrors(text: any): any {
 
 function warnUsedNumberAsFirstChar(line: any, index: any): any {
   // Get the first character of the line
-  let firstChar = line.trim()[1];
+  let trimmedLine = line.trim();
+
+  if (trimmedLine.length === 0) { 
+    return;
+  }
+
+  let firstChar = trimmedLine[0];
+
+  if (firstChar === '"') {
+    firstChar = trimmedLine[1];
+  }
 
   // Check if the first character is a number
   if (!isNaN(firstChar)) {
@@ -136,6 +146,8 @@ function fixQuotes(line: string): string {
     }
   }
 
+  console.log(value);
+  console.log(value[startingIndex - 1]);
   if (value[startingIndex - 1] !== '"') {
     value = value.slice(0, startingIndex) + '"' + value.slice(startingIndex);
   }
@@ -178,4 +190,4 @@ function fixColonSpace(line: any, index: any): any {
   return left + ": " + right;
 }
 
-export { fixColonSpace, fixQuotes, fixErrors, fixMissingCommas, fixLastComma };
+export { fixColonSpace, fixQuotes, fixErrors, fixMissingCommas, fixLastComma, warnUsedNumberAsFirstChar };
